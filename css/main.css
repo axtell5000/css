@@ -1,6 +1,6 @@
-h2 {
+/* h2 {
   color: red;
-}
+} */
 
 /* .about-me {
   color: blue;
@@ -21,17 +21,23 @@ h2 {
 /* Advanced selectors 
 every a tag after a h2, only the first*/
 
-h2 + a {
+body {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&w=1000&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2+a {
   color: brown;
 }
 
 /* has to have same parent and be next */
-textarea ~ button {
+textarea~button {
   color: purple;
 }
 
 /* direct child of ul in this case */
-ul > li {
+ul>li {
   color: yellow;
 }
 
@@ -43,4 +49,20 @@ h2[class="about-me"] {
 /* ^= means string can start with ... */
 img[src^="../img"] {
   border: 1px solid yellow;
+}
+
+#title {
+  /* color: #ba8509; */
+  color: rgb(186, 133, 9);
+}
+
+.subtitle {
+  color: rgb(200, 148, 30);
+}
+
+#service-image {
+  /* background: linear-gradient(to top right, rgb(94, 255, 126), rgba(194, 155, 126, 0.8)); */
+  background: radial-gradient(circle, red 40%, blue 60%);
+  height: 400px;
+  width: 70%;
 }
