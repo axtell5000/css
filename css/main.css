@@ -1,3 +1,46 @@
 h2 {
   color: red;
 }
+
+/* .about-me {
+  color: blue;
+} */
+
+/* li:first-child {
+  color: steelblue;
+} */
+
+/* #google-link:link {
+  color: blue;
+}
+
+#google-link:visited {
+  color: red;
+} */
+
+/* Advanced selectors 
+every a tag after a h2, only the first*/
+
+h2 + a {
+  color: brown;
+}
+
+/* has to have same parent and be next */
+textarea ~ button {
+  color: purple;
+}
+
+/* direct child of ul in this case */
+ul > li {
+  color: yellow;
+}
+
+/* attribute selection */
+h2[class="about-me"] {
+  color: fuchsia;
+}
+
+/* ^= means string can start with ... */
+img[src^="../img"] {
+  border: 1px solid yellow;
+}
